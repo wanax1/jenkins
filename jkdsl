@@ -1,0 +1,11 @@
+job('gene_jobparam') {
+  parameters {
+      stringParam('Object', 'Undescribed', 'This parameter describes a type of object') 
+    
+  }
+  steps {
+       shell('echo The job is $JOB_NAME and $BUILD_NUMBER')
+       shell('echo The object is $Object')
+  }
+  
+}

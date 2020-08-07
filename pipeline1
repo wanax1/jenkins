@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Create') {
+            steps {       
+                sh label: '', script: 'touch newfile2'
+            }
+        }
+        stage('Write') {
+            steps {       
+                sh label: '', script: 'echo "This is pipeline" > newfile'
+            }
+        }
+      stage('Print') {
+            steps {       
+                sh label: '', script: 'cat newfile'
+            }
+        }
+    }
+}

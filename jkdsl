@@ -1,4 +1,4 @@
-job('gene_jobparam') {
+job('gene_jobparam2') {
   parameters {
       stringParam('Object', 'Undescribed', 'This parameter describes a type of object') 
     
